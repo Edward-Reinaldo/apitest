@@ -47,6 +47,7 @@
                     <div class="grid_item"><img src="gallery4.jpg" alt="Gallery Image 4"></div>
                 </div>
             </section>
+
             <section id="contact" class="contactbar">
                 <div class="contact_container">
                     <h2 class="contact_title">Contact</h2>
@@ -75,15 +76,22 @@
             </section>
         </div>
 
-        <section class="pokemon finder">
-            <h2 class="pokemon_title">Pokemon Finder API</h2>
-            <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
-            <button onclick="fetchData()">Search</button>
-            <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+        <div class="sections-container">
+            <section class="pokemon finder">
+                <h2 class="pokemon_title">Pokemon Finder API</h2>
+                <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+                <button onclick="fetchData()">Search</button>
+                <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+                <script src="apimenyala.js"></script>
+            </section>
 
-            <script src="apimenyala.js"></script>
-        </section>
-            
+            <section class="api-gallery">
+                <h2 class="api_gallery_title">API Gallery</h2>
+                <div id="apiGallery"></div>
+                <script src="images.js"></script>
+            </section>
+        </div>
+
         <section id="guestbook" class="guestbook">
             <h2 class="guestbook_title">Guest Book</h2>
             <form id="guestbookForm">
