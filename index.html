@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+    <link href="home.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biodata | Edward</title>
+    </head>
+
+    <body>
+        <div class="content-wrapper">
+            <header class="header">
+                <a href="#" class="logo">Curriculum Vitae</a>
+                <nav class="navbar">
+                    <a href="#">About Me</a>
+                </nav>
+            </header>
+            <section class="intro">
+                <div class="intro_container">
+                    <div class="intro_content">
+                        <p class="subtitle">HELLO!</p>
+                        <h1 class="title">
+                            I'm <span>Edward</span> a Collage Student
+                        </h1>
+                        <p class="description">
+                            Welcome to my web portfolio! My name is Edward Fitalis Reinaldo Nduru, a collage student who is currently studying in the Information System Department of Universitas Internasional Semen Indonesia. I've worked on a variety of web projects, ranging from personal blogs to e-commerce platforms.
+                        </p>
+                        <div class="action_btns">
+                            <button class="portfolio">Portofolio</button>
+                            <a href="#contact" class="contact">Contact</a>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="foto1.jpg" alt="profile"/>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <h2 class="grid_title">Gallery</h2>
+                <div class="grid_container">
+                    <div class="grid_item"><img src="gallery1.jpg" alt="Gallery Image 1"></div>
+                    <div class="grid_item"><img src="gallery2.jpg" alt="Gallery Image 2"></div>
+                    <div class="grid_item"><img src="gallery3.jpg" alt="Gallery Image 3"></div>
+                    <div class="grid_item"><img src="gallery4.jpg" alt="Gallery Image 4"></div>
+                </div>
+            </section>
+            <section id="contact" class="contactbar">
+                <div class="contact_container">
+                    <h2 class="contact_title">Contact</h2>
+                    <p class="contact_description">
+                        You can contact me through the following channels:
+                    </p>
+                    <ul class="contact_list">
+                        <li class="contact_item">
+                            <a href="https://www.instagram.com/edwardfitalis/" class="contact_link">Instagram</a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://www.facebook.com/edwardfitalis/" class="contact_link">Facebook</a>
+                        </li>
+                        <li class="contact_item">
+                            <a href="https://www.linkedin.com/in/edwardfitalis/" class="contact_link">LinkedIn</a>
+                        </li>
+                    </ul>
+                    <form class="contact_form" action="#" method="post">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+                        <button type="submit" class="submit_button">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <section class="pokemon finder">
+            <h2 class="pokemon_title">Pokemon Finder API</h2>
+            <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+            <button onclick="fetchData()">Search</button>
+            <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+
+            <script src="apimenyala.js"></script>
+        </section>
+            
+        <section id="guestbook" class="guestbook">
+            <h2 class="guestbook_title">Guest Book</h2>
+            <form id="guestbookForm">
+                <label for="guestName">Name:</label>
+                <input type="text" id="guestName" name="guestName" placeholder="Enter your name" required>
+                <button type="submit" class="add_button">Add</button>
+            </form>
+            <ul id="guestList" class="guest_list"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>
