@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px 50px;
     background: #0f0e19;
     display: flex;
     justify-content: space-between;
@@ -68,13 +68,14 @@ body {
 }
 
 .intro_container {
-        min-height: 100vh;
-        max-width: var(--max-width);
-        margin: auto;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    min-height: auto; 
 }
 
 .subtitle {
@@ -99,12 +100,17 @@ body {
 .image {
     display: grid;
     place-items: center;
-    margin-top: -500px;
+    margin-top: 0; 
 }
   
 .image img {
     width: min(25rem, 90%);
     border-radius: 100%;
+}
+
+.intro_wrapper {
+    position: relative;
+    z-index: 1; 
 }
   
 @media (width < 750px) {
@@ -187,12 +193,12 @@ body {
 
 
 .contactbar {
-    max-width: 1000px;
-    margin: 100px auto;
+    margin: 50px auto; 
     padding: 20px;
-    color: #ffffff;
-    position: relative;
-    top: -500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
 }
 
 .contact_form label {
@@ -224,29 +230,25 @@ body {
 }
 
 .gallery {
-    max-width: 1000px;
-    margin: 100px auto;
-    padding: 20px;
-    color: #ffffff;
-    position: relative;
-    top: -500px;
-}
-
-.gallery {
     padding: 2rem;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     text-align: center;
+    margin: 50px auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
 }
 
 .grid_title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
     color: #333;
 }
 
 .grid_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 1rem;
     padding: 1rem;
 }
@@ -254,16 +256,22 @@ body {
 .grid_item {
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .grid_item img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    border-radius: 10px; 
-    transition: transform 0.3s ease; 
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid_item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .sections-container {
@@ -272,13 +280,12 @@ body {
 }
 
 .guestbook {
-    margin: 50px auto;
+    margin: 50px auto; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 .guestbook_title {
@@ -363,7 +370,6 @@ body {
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
     max-width: 1200px;
     text-align: center;
 }
@@ -403,9 +409,14 @@ body {
 }
 
 .pokemon img {
-    margin-top: 20px;
-    max-width: 100%;
+    margin: 20px auto;
     height: auto;
     display: block;
     border-radius: 10px;
+}
+
+section {
+    margin: 20px 0; 
+    position: relative;
+    z-index: 0; 
 }
